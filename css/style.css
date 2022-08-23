@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+
+html{
+	font-size: 62.5%;
+	height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+body{
+  font-family:'Inter', sans-serif;
+  min-height: 100%;
+}
+.containerIndex {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4,auto);
+  gap: 30px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header"
+    "Contenido"
+    "newsletter"
+    "footerfoot"
+
+}
+
+.Header { grid-area: Header; }
+.Contenido { grid-area: Contenido; }
+.footerfoot { grid-area: footerfoot; }
+.newsletter { grid-area: newsletter; }
+
+/*bg-bodycolor  */
+.bgBodycolor{
+	background-color: #F0E9E1 ;
+}
+
+/* bg-navcolor */
+.bgNavcolor{
+	background-color: #DBCCBB;	
+}
+nav{
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+}
+/* logo */
+#botonera img{
+	width:150px; 
+	}
+
+
+/* barrita */
+.barrita{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	justify-content: center;
+	width:50%;
+	height:10px;
+	list-style-type: none;
+	line-height: 1.5rem;
+	padding: 10px;
+  	margin: 10px;
+  	overflow: hidden;
+	}
+
+.menu{
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-family:'Inter', sans-serif;
+	color: #1C1915; 
+	padding: 10px;
+  	margin: 10px;
+	}
+
+nav form{
+	text-align: right;
+	padding: 10px;
+	margin:10px;
+}
+
+/* allheader */
+.header{
+	font-family: 'Inter', sans-serif; 
+ 	font-size: 5rem;
+ 	color: #FFFFFF;
+	height: 83vh;
+	background-image: url(file:///C:/Users/USURIO/OneDrive/Escritorio/curso%20coder/clase%203/img/header/headernew.jpg);
+	background-size: cover;
+	max-width: 100%;
+  	position: static;
+}
+
+
+/*  */
+.sacarItemlist{
+	list-style-type: none;
+}
+/* contenido */
+.contenido{ 
+display: grid;
+max-width: 100%
+max-height:400px;
+margin: 20px;
+padding:40px; }
+
+.contenidoflex{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width:100%;
+}
+
+/* sectioninfo */
+.contenidofont {
+	text-decoration: none;
+	font-size: 2rem;
+	font-family:'Inter', sans-serif;
+	color: #1C1915;
+	display: inline-block;
+	flex-direction: column;
+}
+
+
+/* newslettlerinfo */
+.newslettlerInfo{
+	display: grid;
+	grid-template-rows: 1fr; 
+	text-decoration: none; 
+	font: 'Inter', sans-serif;
+	font-size: 1.8rem;
+	color: #1C1915;
+	width: 450px;
+	margin: auto;
+	padding: 30px 40px;
+	background-color: rgba(181,153,118,0.6);
+	box-sizing: border-box;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 7px;
+}
+form h2{
+	text-align: center;
+
+}
+ #button {
+ 	background:#4C371C;
+ 	color: #fff; 
+ 	border:none;
+ 	padding: 10px;
+ 	width: 370px;
+ 	margin-top: 20px;
+	
+ }
+ #button{
+ 	cursor: pointer;
+ }
+
+.footer{
+    width: 100%;
+    padding: 50px;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	align-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "iframe footerSectionp esloganFooter"
+}
+
+/* footer */
+.footerdec{
+    background-color: #DBCCBB;
+}
+
+/* iframe */
+.iframe{
+    grid-area: iframe;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 450px;
+    margin: 20px;
+}
+
+/* footersectionp */
+.footerSectionp{
+	grid-area: footerSectionp;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none; 
+	text-align: center;
+	font: 'Inter', sans-serif;
+	color: #1C1915;
+	font-size: 1.8rem;
+	margin: 20px;
+  }
+	
+/* iconfooter */
+.iconfooter{
+	display: inline;
+	flex-direction: column;
+	width: 40px;
+	height:40px;
+	align-content: center;
+}
+
+/* esloganfooter */
+.esloganFooter{
+	grid-area: esloganFooter;
+	display: flex;
+	align-content: right;
+
+
+	text-align: right;
+	font: 'Inter', sans-serif;
+	font-size: 3rem;
+	color: #1C1915; 
+	margin: 20px;
+}
+/* PRODUCTOS EMPIEZA ACA */
+
+.containerprod {  display: grid;
+
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "productos fotosMain"
+    "Categorias fotosMain"
+    "Categorias2 fotosMain"
+    "talles fotosMain"
+	"fotosMain fotosMain";
+  grid-template-columns:30%, 70%;
+}
+
+
+.productos { grid-area: productos; }
+.Categorias { grid-area: Categorias; }
+.Categorias2 { grid-area: Categorias2; }
+.talles { grid-area: talles; }
+.fotosMain { grid-area: fotosMain;}
+
+/* h1productos */
+.h1productos{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Inter', sans-serif; 
+	font-size: 3.5rem;
+	text-align:left;
+	margin-top: 20px;
+
+}
+/* categorias */
+.h2categorias{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Inter', sans-serif;
+	font-size: 2.5rem;
+
+	margin-top: 20px;
+}
+/* categoria2 */
+.categoria2{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	text-decoration: none; 
+	text-align: left;
+	font: 'Inter', sans-serif;
+	font-size: 1.8rem;
+	color: #1C1915;
+	margin-top: 20px;
+	} 
+.formtalles{
+
+	list-style-type: none;
+	text-decoration: none; 
+	text-align: left;
+	font: 'Inter', sans-serif;
+	font-size: 1.5rem;
+	color: #1C1915;
+	margin-top: 20px;
+}
+
+/* divleft */
+.div{
+	margin: 20px;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-content: center;
+
+ 	}
+
+.div figure {
+	text-align: center;
+	align-items: : center;
+}
+.div, figure, figcaption{
+	font-family: 'Inter', sans-serif;
+	font-size: 2rem;
+	}
+
+.div, figure, figcaption, p{
+	font-family: 'Inter', sans-serif;
+	font-size: 1.5rem;
+	
+}
+
+/* fotos */
+.imgproductos{
+	max-height: 100%;
+ 	margin: 20px;
+
+}
+.div figure img{
+	padding: 20px;
+	margin: 20px;
+	;
+}
+div p{
+	padding: auto;
+	margin: auto;
+
+}
+
+/*CUIDADOS EMPIEZA ACA*/
+.containerCuidados {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "headercuidados"
+    "cuidadostittle"
+    "cuidadostext"
+    "cuidadoseslogan";
+}
+
+.headercuidados { grid-area: headercuidados; }
+.cuidadostittle { grid-area: cuidadostittle; }
+.cuidadostext { grid-area: cuidadostext; }
+.cuidadoseslogan {grid-area: cuidadoseslogan;}
+
+.headerC{
+	background-image: url(file:///C:/Users/USURIO/OneDrive/Escritorio/curso%20coder/clase%203/img/header/fotonosotroscreo_edited.jpg);
+	background-size: cover;
+	max-width: 100%;
+  	position: static;
+  	height: 100vh;
+  }
+
+/* fontyesascosas */
+.textCuidados{
+	font-family: 'Inter', sans-serif; 
+	font-size: 3.5rem;
+	padding: 20px;
+	margin:20px;
+	text-align: center;
+}
+/* textpreg */
+.textpreg{
+	font-family: 'Inter', sans-serif;
+	font-size: 3rem;
+	padding: 20px;
+	margin:20px;
+	text-align: center;
+}
+/* textp */
+.textIntro{
+	font-family: 'Inter', sans-serif;
+	font-size: 2rem;
+	padding: 10px;
+	margin: 20px;
+	text-align: center;
+}
+
+/* textli */
+.textli{
+	font-family: 'Inter', sans-serif;
+	font-size: 2rem;
+	list-style-type: disc;
+	padding: 5px;
+	margin: 5px;
+}
+/* eslogan2 */
+.eslogan2{
+	font-family: 'Inter', sans-serif;
+	font-size: 2rem;
+	padding: 10px;
+	margin: 20px;
+	text-align: center;
+}
+
+/* NOSOTROS EMPIEZA ACA */
+.containerNos {display: grid;
+  grid-template-columns: 50%, 50%; 
+  grid-template-rows: repeat(5, auto); 
+  grid-template-areas:
+    "NosotrostextT NosotrostextT"
+    "Nosotrostext1 FotoAnillosnos1"
+    "FotoNos2 Nosotrostext2"
+    "Nosotrostext3 Nosotrostext3"
+    "iframespotify iframespotify";
+}
+
+
+.NosotrostextT{ grid-area: NosotrostextT; }
+.Nosotrostext1 { grid-area: Nosotrostext1; }
+.FotoAnillosnos1 { grid-area: FotoAnillosnos1;}
+.FotoNos2 { grid-area: FotoNos2; }
+.Nosotrostext2 { grid-area: Nosotrostext2; }
+.Nosotrostext3 { grid-area: Nosotrostext3; }
+.iframespotify { grid-area: iframespotify; }
+
+.headerNos{
+	font-family: 'Inter', sans-serif; 
+ 	font-size: 5rem;
+ 	color: #FFFFFF;
+	height: 100%;
+	text-align: right;
+	background-image: url(file:///C:/Users/USURIO/Downloads/jewels-g17eb4ba44_1280.jpg);
+	background-size: cover;
+	max-width: 100%;
+  	position: relative} 
+
+.textnosotros{
+	font-family: 'Inter', sans-serif; 
+	font-size: 3.5rem;
+	text-align:left;
+	padding: 30px;
+	margin:20px;
+}
+
+/* textnosotros */
+.textnosotrosp{
+	font-family: 'Inter', sans-serif;
+	font-size: 2.5rem;
+	text-align:left;
+	padding: 10px;
+	margin:20px;}
+
+
+.textnosotrosp2{
+	font-family: 'Inter', sans-serif;
+	font-size: 2.5rem;
+	text-align:right;
+	padding: 30px;
+	margin:20px;}
+
+/* textp */
+.textp{
+	font-family: 'Inter', sans-serif;
+	font-size: 2rem;
+	text-align:right;
+	padding: 10px;
+	margin: 20px;
+}
+
+.containerNos section img{
+	padding: 50px;
+}
+
+.containerNos section iframe{
+	padding-bottom: 50px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/*CONTACTO EMPIEZA ACA  */
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 30px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "contactoText contactoForm";
+}
+
+.contactoText { grid-area: contactoText; }
+
+.contactoForm { grid-area: contactoForm; }
+
+/* contacto */
+.contacto{
+	font-family: 'Inter', sans-serif; 
+	font-size: 3.5rem;
+	text-align:left;
+	padding: 30px;
+	margin:20px;}
+
+.formContacto{
+	display: grid;
+	grid-template-rows: 1fr; 
+	text-decoration: none; 
+	font: 'Inter', sans-serif;
+	font-size: 1.8rem;
+	color: #1C1915;
+	width: 450px;
+	margin: auto;
+	padding: 30px 40px;
+	background-color: rgba(181,153,118,0.6);
+	box-sizing: border-box;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 7px;}
+/* textform */
+.textformp{
+	font-family: 'Inter', sans-serif;
+	font-size: 2.5rem;
+	text-align:left;
+	padding: 30px;
+	margin:20px;}
+
+/* contactform */
+.contactform{
+	list-style-type: none;
+	text-decoration: none; 
+	text-align: center;
+	font: 'Inter', sans-serif;
+	font-size: 1.8rem;
+	color: #1C1915;
+	margin: 40px;
+	padding: 20px, 10px
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px){
+
+body{
+	background-color: #F0E9E1 
+	}
+/* INDEX */
+.contenidoflex{
+	display: flex;
+	flex-direction:column;
+	}
+.footer{
+	display: flex;
+	flex-direction: column;
+ 	
+	}
+.footerfoot{
+   display: grid;
+   grid-template-columns:  1fr;
+   grid-template-rows: 1fr;
+	}
+.footerdec{
+    background-color: #DBCCBB;
+}
+/* CUIDADOS */
+.containerCuidados main footer{
+ 	display: grid;
+ 	grid-template-columns:1fr;
+ 	grid-template-rows:1fr;
+	}
+.
+.headercuidados .headerC{
+	background-size: cover;
+	max-width: 100%;
+  	position: static;
+  	height: 100vh;
+  	font-size: 1rem;
+	}
+/* NOSOTROS */
+.containerNos{
+ 	display: grid;
+ 	grid-template-columns:100vh;
+ 	grid-template-rows:repeat(5,auto);
+	}
+	
+.headerNos{
+	background-size: cover;
+	max-width: 100%;
+  	position: static;
+  	height: 100vh;
+  	font-size: 1rem;
+	}
+/* CONTACTO */
+.container main footer{
+ 	display: flex;
+ 	flex-direction: column;
+ }
+
+}
+
